@@ -71,4 +71,10 @@ class FileSorter
       person.last_name
     end.reverse
   end
+
+  def self.print_results(sorted_list)
+    sorted_list.each do |person|
+      puts "#{person.last_name} #{person.first_name} #{person.gender} #{person.dob} #{person.favorite_color}"
+    end
+  end
 end
