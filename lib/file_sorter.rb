@@ -16,6 +16,7 @@ class FileSorter
         dob: row[4],
         favorite_color: row[3]
       }
+      Person.new(data)
     end
   end
 end
