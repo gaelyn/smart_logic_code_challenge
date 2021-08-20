@@ -1,5 +1,5 @@
-# Goal
-Parse through the 3 input `.txt` files to produce the desired output files.
+## Goal
+Parse through the 3 input `.txt` files to produce the desired output.
 
 ## Input  
 Note: The order of properties is different for each format.  
@@ -66,3 +66,18 @@ Bonk Radek Male 6/3/1975 Green
 Bishop Timothy Male 4/23/1967 Yellow
 Abercrombie Neil Male 2/13/1943 Tan
 ```
+
+## Logic
+In order to demonstrate OOP, my logic was to have one class that would take
+information from each line in the input files and create a `Person` object with
+desired attributes. Then create another class that would handle loading the files,
+parsing though each line, and generating those `Person` objects, and then sort
+those objects based on the given criteria.
+
+## Testing
+Unit tested with Rspec.  
+To run tests, type `rspec` into terminal.
+
+## Setup
+
+## Run Program
