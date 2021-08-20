@@ -19,4 +19,19 @@ class FileSorter
       Person.new(data)
     end
   end
+
+  def self.load_pipe
+    rows = File.readlines(@@pipe).map(&:chomp)
+    rows.map do |row|
+      row = row.split(" | ")
+      data = {
+        last_name: row[0],
+        first_name: row[1],
+        gender: row[3],
+        dob: row[5],
+        favorite_color: row[4]
+      }
+      Person.new(data)
+    end
+  end
 end
