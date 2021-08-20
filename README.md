@@ -103,7 +103,7 @@ those objects based on the given criteria.
 - `all` to see all 3 options above at once.
 
 ## Running The Tests
-To run tests, make sure you are in root directory and type `rspec` into terminal.
+To run tests, make sure you are in main directory and type `rspec` into terminal.
 
 ## Built With
 - Ruby version 2.5.3
