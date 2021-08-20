@@ -75,13 +75,15 @@ class FileSorter
     end
 
     def print_results(sorted_list)
+      string = ""
       sorted_list.each do |person|
-        puts "#{person.last_name} #{person.first_name} #{person.gender} #{person.dob} #{person.favorite_color}"
+        string << "#{person.last_name} #{person.first_name} #{person.gender} #{person.dob} #{person.favorite_color}\n"
       end
+      puts string
     end
 
     def print_all_options
-      puts "\nOutput 1:"
+      puts "Output 1:"
       print_results(sort_gender)
       puts "\nOutput 2:"
       print_results(sort_birthdate)
