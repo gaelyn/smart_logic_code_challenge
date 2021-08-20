@@ -81,8 +81,8 @@ Abercrombie Neil Male 2/13/1943 Tan
 ## Logic
 In order to demonstrate OOP, my logic was to have one class that would take
 information from each line in the input files and create a `Person` object with
-desired attributes. Then create another class that would handle loading the files,
-parsing though each line, and generating those `Person` objects, and then sort
+desired attributes. Then I created another class, `FileSorter`, that would handle loading the files,
+parsing though each line, and generating those `Person` objects, and sorting
 those objects based on the given criteria.
 
 ## File Setup
@@ -93,16 +93,16 @@ those objects based on the given criteria.
 
 ## Run Program
 1. Open directory file on local machine or clone [repository](https://github.com/gaelyn/smart_logic_code_challenge) from Github.
-2. `cd` into `smart_logic` directory
-3. In terminal run the command `ruby sort.rb`
-4. When prompted you may type on of the following options:
+2. From your terminal, `cd` into main directory `cooper-gaelyn`
+3. In terminal, run the command `ruby sort.rb`
+4. When prompted you may type one of the following options:
 - `gender` to see files sorted by gender, then last name.
 - `date of birth` to see files sorted by date of birth, then last name.
 - `last name` to see files sorted by last name in descending order.
 - `all` to see all 3 options above at once.
 
 ## Running The Tests
-To run tests, type `rspec` into terminal.
+To run tests, make sure you are in root directory and type `rspec` into terminal.
 
 ## Built With
 - Ruby version 2.5.3
