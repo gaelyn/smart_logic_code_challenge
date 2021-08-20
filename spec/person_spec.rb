@@ -27,4 +27,32 @@ describe Person do
       expect(@person.dob).to eq("7/12/1959")
     end
   end
+
+  describe 'gender' do
+    it 'can format Female gender' do
+      data = {
+        last_name: "Kelly",
+        first_name: "Sue",
+        gender: "F",
+        favorite_color: "Pink",
+        dob: "7/12/1959"
+      }
+      @person = Person.new(data)
+
+      expect(@person.gender).to eq("Female")
+    end
+
+    it 'can format Male gender' do
+      data = {
+        last_name: "Kelly",
+        first_name: "Sue",
+        gender: "M",
+        favorite_color: "Pink",
+        dob: "7/12/1959"
+      }
+      @person = Person.new(data)
+
+      expect(@person.gender).to eq("Male")
+    end
+  end
 end

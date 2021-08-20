@@ -7,4 +7,12 @@ class Person
     @dob = data[:dob]
     @favorite_color = data[:favorite_color]
   end
+
+  def gender
+    if @gender.include?("F" || "f")
+      "Female"
+    else
+      "Male"
+    end
+  end
 end
