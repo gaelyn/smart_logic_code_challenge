@@ -93,7 +93,7 @@ those objects based on the given criteria.
 
 ## Run Program
 1. Open directory file on local machine or clone [repository](https://github.com/gaelyn/smart_logic_code_challenge) from Github.
-2. From your terminal, `cd` into main directory `cooper-gaelyn`
+2. From your terminal, `cd` into main directory `smart_logic`
 3. In terminal, run the command `ruby sort.rb`
 4. When prompted you may type one of the following options:
 - `gender` to see files sorted by gender, then last name.
