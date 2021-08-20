@@ -15,4 +15,12 @@ class Person
       "Male"
     end
   end
+
+  def dob
+    if @dob.include?("-")
+      @dob.gsub("-", "/")
+    else
+      @dob
+    end
+  end
 end
