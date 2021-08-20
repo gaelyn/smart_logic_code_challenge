@@ -4,7 +4,7 @@
 [**Output**](#output) |
 [**Logic**](#logic) |
 [**File Setup**](#file-setup) |
-[**Run Program**](#run-program) |
+[**Run Program**](#running-the-program) |
 [**Tests**](#running-the-tests) |
 [**Built With**](#built-with) |
 [**Developer**](#developer) |
@@ -82,7 +82,7 @@ Abercrombie Neil Male 2/13/1943 Tan
 In order to demonstrate OOP, my logic was to have one class that would take
 information from each line in the input files and create a `Person` object with
 desired attributes. Then I created another class, `FileSorter`, that would handle loading the files,
-parsing though each line, and generating those `Person` objects, and sorting
+parsing though each line to create `Person` objects, and sorting
 those objects based on the given criteria.
 
 ## File Setup
@@ -91,11 +91,12 @@ those objects based on the given criteria.
 - Tests are located in the `spec` folder
 - Runner file, `sort.rb`, is located in the main directory
 
-## Run Program
-1. Open directory file on local machine or clone [repository](https://github.com/gaelyn/smart_logic_code_challenge) from Github.
-2. From your terminal, `cd` into main directory `smart_logic`
-3. In terminal, run the command `ruby sort.rb`
-4. When prompted you may type one of the following options:
+## Running the Program
+1. Download `cooper-gaelyn` directory to local machine or clone [repository](https://github.com/gaelyn/smart_logic_code_challenge) from Github.
+2. From your terminal, `cd` into main directory `cooper-gaelyn`
+3. Make sure you have Ruby 2.5.3 installed
+4. In terminal, run the command `ruby sort.rb`
+5. When prompted you may type one of the following options:
 - `gender` to see files sorted by gender, then last name.
 - `date of birth` to see files sorted by date of birth, then last name.
 - `last name` to see files sorted by last name in descending order.
@@ -109,4 +110,4 @@ To run tests, make sure you are in root directory and type `rspec` into terminal
 - Rspec
 
 ## Developer
-* Gaelyn Cooper [GitHub](https://github.com/gaelyn) • [LinkedIn](https://www.linkedin.com/in/gaelyn-cooper/)
+* Gaelyn Cooper | [GitHub](https://github.com/gaelyn) | [LinkedIn](https://www.linkedin.com/in/gaelyn-cooper/)
