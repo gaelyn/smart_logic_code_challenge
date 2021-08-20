@@ -34,6 +34,7 @@ describe FileSorter do
     before :each do
       @sort_gender = FileSorter.sort_gender
       @sort_birthdate = FileSorter.sort_birthdate
+      @sort_last_name = FileSorter.sort_last_name
     end
 
     it 'can sort by gender and then last name' do
@@ -50,6 +51,12 @@ describe FileSorter do
       expect(@sort_birthdate.first.last_name).to eq("Abercrombie")
       expect(@sort_birthdate.last.dob).to eq("3/3/1985")
       expect(@sort_birthdate.last.last_name).to eq("Smith")
+    end
+
+    it 'can sort by last name descending' do
+      expect(@sort_last_name).to be_an(Array)
+      expect(@sort_last_name.first.last_name).to eq("Smith")
+      expect(@sort_last_name.last.last_name).to eq("Abercrombie")
     end
   end
 end

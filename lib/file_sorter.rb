@@ -65,4 +65,10 @@ class FileSorter
       [dob[2].to_i, dob[0].to_i, dob[1].to_i, person.last_name]
     end
   end
+
+  def self.sort_last_name
+    all_files.sort_by do |person|
+      person.last_name
+    end.reverse
+  end
 end
