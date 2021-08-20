@@ -65,9 +65,6 @@ describe FileSorter do
       @sort_gender = FileSorter.sort_gender
       @sort_birthdate = FileSorter.sort_birthdate
       @sort_last_name = FileSorter.sort_last_name
-      # @option1 = FileSorter.print_results(@sort_gender)
-      # @option2 = FileSorter.print_results(@sort_birthdate)
-      # @option3 = FileSorter.print_results(@sort_last_name)
     end
 
     it 'can show files sorted by gender' do
@@ -101,6 +98,7 @@ describe FileSorter do
 
       expect { FileSorter.print_results(@sort_birthdate) }.to output(msg).to_stdout
     end
+    
     it 'can show files sorted by gender' do
       msg = <<~SORTED
       Smith Steve Male 3/3/1985 Red
