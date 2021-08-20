@@ -9,7 +9,6 @@ puts "You may also type 'all' to see all sorted options."
 prompt = gets.chomp.downcase
 puts "\n"
 
-
 if prompt == "gender"
   FileSorter.print_results(sort_gender)
 elsif prompt == "date of birth"
