@@ -34,4 +34,18 @@ class FileSorter
       Person.new(data)
     end
   end
+
+  def self.load_space
+    rows = File.readlines(@@space).map(&:chomp)
+    rows.map do |row|
+      data = {
+        last_name: row.split[0],
+        first_name: row.split[1],
+        gender: row.split[3],
+        dob: row.split[4],
+        favorite_color: row.split[5]
+      }
+      Person.new(data)
+    end
+  end
 end

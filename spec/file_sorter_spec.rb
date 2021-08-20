@@ -14,5 +14,11 @@ describe FileSorter do
       expect(FileSorter.load_pipe.first).to be_a(Person)
       expect(FileSorter.load_pipe.count).to eq(3)
     end
+
+    it 'can load text file where values are separated by spaces' do
+      expect(FileSorter.load_space).to be_an(Array)
+      expect(FileSorter.load_space.first).to be_a(Person)
+      expect(FileSorter.load_space.count).to eq(3)
+    end
   end
 end
