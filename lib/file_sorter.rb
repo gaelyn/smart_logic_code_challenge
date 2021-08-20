@@ -54,8 +54,15 @@ class FileSorter
   end
 
   def self.sort_gender
-    sorted = all_files.sort_by do |person|
+    all_files.sort_by do |person|
       [person.gender, person.last_name]
+    end
+  end
+
+  def self.sort_birthdate
+    all_files.sort_by do |person|
+      dob = person.dob.split("/")
+      [dob[2].to_i, dob[0].to_i, dob[1].to_i, person.last_name]
     end
   end
 end
