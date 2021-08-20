@@ -4,7 +4,8 @@ sort_gender = FileSorter.sort_gender
 sort_birthdate = FileSorter.sort_birthdate
 sort_last_name = FileSorter.sort_last_name
 
-p "Would you like the list sorted by gender, date of birth, or last name? You may also type 'all' to see all sorted options."
+puts "Would you like the list sorted by gender, date of birth, or last name?"
+puts "You may also type 'all' to see all sorted options."
 prompt = gets.chomp.downcase
 puts "\n"
 

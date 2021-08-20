@@ -1,13 +1,13 @@
 require './lib/person'
 
 class FileSorter
-  class << self
-    @@comma = './data/comma.txt'
-    @@pipe = './data/pipe.txt'
-    @@space = './data/space.txt'
+  @comma = './data/comma.txt'
+  @pipe = './data/pipe.txt'
+  @space = './data/space.txt'
 
+  class << self
     def load_comma
-      rows = File.readlines(@@comma).map(&:chomp)
+      rows = File.readlines(@comma).map(&:chomp)
       rows.map do |row|
         row = row.split(", ")
         data = {
@@ -22,7 +22,7 @@ class FileSorter
     end
 
     def load_pipe
-      rows = File.readlines(@@pipe).map(&:chomp)
+      rows = File.readlines(@pipe).map(&:chomp)
       rows.map do |row|
         row = row.split(" | ")
         data = {
@@ -37,14 +37,15 @@ class FileSorter
     end
 
     def load_space
-      rows = File.readlines(@@space).map(&:chomp)
+      rows = File.readlines(@space).map(&:chomp)
       rows.map do |row|
+        row = row.split
         data = {
-          last_name: row.split[0],
-          first_name: row.split[1],
-          gender: row.split[3],
-          dob: row.split[4],
-          favorite_color: row.split[5]
+          last_name: row[0],
+          first_name: row[1],
+          gender: row[3],
+          dob: row[4],
+          favorite_color: row[5]
         }
         Person.new(data)
       end
