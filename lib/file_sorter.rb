@@ -78,5 +78,14 @@ class FileSorter
         puts "#{person.last_name} #{person.first_name} #{person.gender} #{person.dob} #{person.favorite_color}"
       end
     end
+
+    def print_all_options
+      puts "\nOutput 1:"
+      print_results(sort_gender)
+      puts "\nOutput 2:"
+      print_results(sort_birthdate)
+      puts "\nOutput 3:"
+      print_results(sort_last_name)
+    end
   end
 end
