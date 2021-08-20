@@ -32,15 +32,15 @@ describe FileSorter do
 
   describe 'sort files' do
     before :each do
-      @files = FileSorter.all_files
+      @sort_gender = FileSorter.sort_gender
     end
 
     it 'can sort by gender and then last name' do
-      expect(FileSorter.sort_gender).to be_an(Array)
-      expect(FileSorter.sort_gender.first.gender).to eq("Female")
-      expect(FileSorter.sort_gender.first.last_name).to eq("Hingis")
-      expect(FileSorter.sort_gender.last.gender).to eq("Male")
-      expect(FileSorter.sort_gender.last.last_name).to eq("Smith")
+      expect(@sort_gender).to be_an(Array)
+      expect(@sort_gender.first.gender).to eq("Female")
+      expect(@sort_gender.first.last_name).to eq("Hingis")
+      expect(@sort_gender.last.gender).to eq("Male")
+      expect(@sort_gender.last.last_name).to eq("Smith")
     end
   end
 end
