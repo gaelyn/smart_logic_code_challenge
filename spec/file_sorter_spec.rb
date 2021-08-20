@@ -117,7 +117,6 @@ describe FileSorter do
 
     it 'can show all output options' do
       msg = <<~SORTED
-      
       Output 1:
       Hingis Martina Female 4/2/1979 Green
       Kelly Sue Female 7/12/1959 Pink
