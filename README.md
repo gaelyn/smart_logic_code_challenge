@@ -78,6 +78,12 @@ those objects based on the given criteria.
 Unit tested with Rspec.  
 To run tests, type `rspec` into terminal.
 
-## Setup
-
 ## Run Program
+1. Open directory file on local machine or clone [repository](https://github.com/gaelyn/smart_logic_code_challenge) from Github.
+2. `cd` into `smart_logic` directory
+3. In terminal run the command `ruby sort.rb`
+4. When prompted you may type on of the following options:
+- `gender` to see files sorted by gender, then last name.
+- `date of birth` to see files sorted by date of birth, then last name.
+- `last name` to see files sorted by last name in descending order.
+- `all` to see all 3 options above at once.
