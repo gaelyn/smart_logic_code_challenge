@@ -1,3 +1,14 @@
+## Table of contents
+[**Goal**](#goal) |
+[**Input**](#input) |
+[**Output**](#output) |
+[**Logic**](#logic) |
+[**File Setup**](#file-setup) |
+[**Run Program**](#run-program) |
+[**Tests**](#running-the-tests) |
+[**Built With**](#built-with) |
+[**Developer**](#developer) |
+
 ## Goal
 Parse through the 3 input `.txt` files to produce the desired output.
 
@@ -74,9 +85,11 @@ desired attributes. Then create another class that would handle loading the file
 parsing though each line, and generating those `Person` objects, and then sort
 those objects based on the given criteria.
 
-## Testing
-Unit tested with Rspec.  
-To run tests, type `rspec` into terminal.
+## File Setup
+- Input `.txt` files for given inputs are located in the `data` folder
+- `FileSorter` and `Person` classes are located in the `lib` folder
+- Tests are located in the `spec` folder
+- Runner file, `sort.rb`, is located in the main directory
 
 ## Run Program
 1. Open directory file on local machine or clone [repository](https://github.com/gaelyn/smart_logic_code_challenge) from Github.
@@ -87,3 +100,13 @@ To run tests, type `rspec` into terminal.
 - `date of birth` to see files sorted by date of birth, then last name.
 - `last name` to see files sorted by last name in descending order.
 - `all` to see all 3 options above at once.
+
+## Running The Tests
+To run tests, type `rspec` into terminal.
+
+## Built With
+- Ruby version 2.5.3
+- Rspec
+
+## Developer
+* Gaelyn Cooper [GitHub](https://github.com/gaelyn) • [LinkedIn](https://www.linkedin.com/in/gaelyn-cooper/)
